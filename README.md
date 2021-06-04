@@ -1,30 +1,5 @@
 <h1>Softpanorama defensive error diagnostic framework</h1>
 
-<p>Many people independently came to the subset of ideas of <b><a href="../../SE/defensive_programming.shtml">Defensive programming</a></b> so it is impossible to attribute this concept to a single author. As an example of early attempt to formulate some principles of defensive programming style we can list&nbsp; Tom Christiansen recommendations 
-(Jan 1, 1998) for Perl language. Perl does not have strict typing of variables and, by default, does not&nbsp; require any declaration 
-of variables, creating potential for misspelled variables slipping into production version of the program. (unless you use <tt>strict</tt> pragma 
--- the use the latter became standard in modern Perl). While they are more then 20 years old they are still relevant:&nbsp;&nbsp; </p>
-<ul>
-
-   <li><tt>use strict </tt></li>
-
-   <li><tt>#!/usr/bin/perl -w </tt></li>
-
-   <li><em>Check all syscall return values, printing</em> $! </li>
-
-   <li><em>Watch for external program failures in</em> $? </li>
-
-   <li>Check $@ after <code>eval&quot;&quot;</code> or <code>s///ee</code>. </li>
-
-   <li>[Use] Parameter asserts </li>
-
-   <li><tt>#!/usr/bin/perl -T</tt>&nbsp; (taint mode in which Perl distrust any data from outside world, see below)</li>
-
-   <li>Always have an <code>else</code> after a chain of <code>elsif</code>s </li>
-
-   <li>Put commas at the end of lists to so your program won&#39;t break if someone inserts another item at the end of the list.</li>
-</ul>
-
 <p><em>One of fundamental principles of defensive programming is that the program should always provide meaningful diagnostics and logging</em>. Meaningful diagnostic is typically a weak spot of many 
 Unix utilities, which were written when every byte of storage was a premium and the computer used to have just one 1M bytes of memory or 
 less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
