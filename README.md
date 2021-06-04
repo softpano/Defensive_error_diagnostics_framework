@@ -1,7 +1,6 @@
 <h1>Defensive error diagnostic framework</h1>
 
-<p>Many people independently came to the subset of ideas of defensive programming, so it is impossible to attribute this concept to 
-a single author. As an example of early attempt to formulate some principles of defensive programming style we can list&nbsp; Tom Christiansen recommendations 
+<p>Many people independently came to the subset of ideas of <b><a href="../../SE/defensive_programming.shtml">Defensive programming</a></b> so it is impossible to attribute this concept to a single author. As an example of early attempt to formulate some principles of defensive programming style we can list&nbsp; Tom Christiansen recommendations 
 (Jan 1, 1998) for Perl language. Perl does not have strict typing of variables and, by default, does not&nbsp; require any declaration 
 of variables, creating potential for misspelled variables slipping into production version of the program. (unless you use <tt>strict</tt> pragma 
 -- the use the latter became standard in modern Perl). While they are more then 20 years old they are still relevant:&nbsp;&nbsp; </p>
@@ -26,9 +25,9 @@ of variables, creating potential for misspelled variables slipping into producti
    <li>Put commas at the end of lists to so your program won&#39;t break if someone inserts another item at the end of the list.</li>
 </ul>
 
-<p><b>The program should always provide meaningful diagnostics and logging.</b> Meaningful diagnostic is typically a weak spot of many Unix utilities, 
-   which were written when every byte of storage was a premium and computer used to have just one 1M bytes of memory or less (Xenix 
-   -- one of the early Unixes worked well on 2MB IBM PCs)</p>
+<p><em>One of fundamental principles of defensive programming is that the program should always provide meaningful diagnostics and logging</em>. Meaningful diagnostic is typically a weak spot of many 
+Unix utilities, which were written when every byte of storage was a premium and the computer used to have just one 1M bytes of memory or 
+less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
 
 <p>If messages 
    you get in case of errors or crashes are cryptic and its takes a lot of efforts to related the message to the root case. If you 
@@ -38,12 +37,16 @@ of variables, creating potential for misspelled variables slipping into producti
    quality of diagnostics that is typically demonstrated by debugging complier. Defensive programming also presume presence of a sophisticated 
    logging infrastructure within the program. Logs should are easy to parse and filter for relevant information. </p>
 
-<p>Defensive diagnostic framework module provides&nbsp; the following functionality:</p>
+<p>Softpanorama defensive diagnostic framework module provides&nbsp; the following functionality:</p>
 <ol>
 
 <li><b>All messages are produced with the line in which they occurred.  </b>
 
-<li><b>Messages are printed with the error code, which signify the severity. Four levels are distinguished:</b><ol type="a">
+<li><b>Messages are generated using subroutine</b> <tt>logme</tt> <b>which has two parameters (error code and the text of the 
+   message). They are printed with the error code, which signify the severity and the line number at which </b><tt>logme</tt><b> 
+   subroutine was involved. Four levels are distinguished:</b>
+
+<ol type="a">
 
 <li type="a"><tt>Warnings</tt>: informational messages that do not affect the validly of the program output or any results of 
       its execution. Still the situation that deserve some attention </li>
@@ -55,9 +58,8 @@ of variables, creating potential for misspelled variables slipping into producti
 <li><tt>Severe errors</tt> (<em>failures</em>). Program can continue but the results are most probably a garbage and should be 
       discarded. Diagnostic messages provides after this point might still have a value. </li>
 
-<li><tt>Terminal or internal errors</tt> (<em>abends</em>). Program can't continue at this point and need to exit. In case of 
-      cron jobs, for such abnormal 
-      situations you can even try to email the developer. </li>
+<li><tt>Terminal or internal errors</tt> (called <em>abends</em> - abnomal ends). Those are unrecoverable errors. Program iether ontinue at this point ir the results are garabage. In Cans ethe program run as a cron job, for such abnormal situations you can even try to email the developer.</li>
+   
 </ol>
 
 <p>To achieve this one needs to write or borrow and adapt a special 
