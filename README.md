@@ -105,4 +105,4 @@ detected.&nbsp; For example</p>
 
 <li>There should be a possibility to output of the summary of the message at the end of execution of programs</li>
 </ol>
-
+<p>For more current and more detailed ingomation see also <a href="http://softpanorama.org/Admin/Sp_admin_utils/defensive_error_diagnostic_framework.shtml">Defensive error diagnostic framework</a></p>
