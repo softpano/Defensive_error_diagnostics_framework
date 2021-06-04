@@ -1,3 +1,3 @@
-# Defensive_error_diagnostics_framework
+# Defensive error diagnostics framework
 
 To be populated later 
