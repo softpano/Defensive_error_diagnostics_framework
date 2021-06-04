@@ -86,3 +86,11 @@ detected.&nbsp; For example</p>
 <li>There should be a possibility to output of the summary of the messages at the end of execution of programs</li>
 </ol>
 <p>For more current and more detailed ingomation see also <a href="http://softpanorama.org/Admin/Sp_admin_utils/defensive_error_diagnostic_framework.shtml">Defensive error diagnostic framework</a></p>
+
+<h3>Testing the Softpano.pm module</h3>
+
+<p>to test Softpano.pm module please use softpano_test.pl provided. This test re-implements basic functionality of cat command in Perl.  Invocation is:
+
+<pre>perl softpano_test.pl softpano_test.pl</pre>
+
+<p>The text of softpano_test.pl can serve as a user manual for the module. 
