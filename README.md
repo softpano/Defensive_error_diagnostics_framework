@@ -1,5 +1,8 @@
 <h1>Softpanorama defensive error diagnostic framework</h1>
 
+<p>Many people independently came to the subset of ideas of <b><a href="../../SE/defensive_programming.shtml">Defensive programming</a></b> so it is impossible to attribute this concept to 
+a single author.</p>
+
 <p><em>One of fundamental principles of defensive programming is that the program should always provide meaningful diagnostics and logging</em>. Meaningful diagnostic is typically a weak spot of many 
 Unix utilities, which were written when every byte of storage was a premium and the computer used to have just one 1M bytes of memory or 
 less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
