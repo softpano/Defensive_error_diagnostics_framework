@@ -5,7 +5,7 @@ Unix utilities, which were written when every byte of storage was a premium and 
 less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
 
 <p>If messages 
-   you get in case of errors or crashes are cryptic and its takes a lot of efforts to related the message to the root case. If you 
+   you get in case of errors or crashes are cryptic it typically takes a lot of efforts to relate the message to the root case. If you 
    are the user of the program that you yourself have written that insult after injury :-) </p>
 
 <p>Here we strive to the 
