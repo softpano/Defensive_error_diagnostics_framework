@@ -1,5 +1,3 @@
-# Defensive error diagnostics framework
-
 <h1>Defensive error diagnostic framework</h1>
 
 <p>Many people independently came to the subset of ideas of defensive programming, so it is impossible to attribute this concept to 
