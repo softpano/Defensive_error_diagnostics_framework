@@ -1,4 +1,4 @@
-<h1>Defensive error diagnostic framework</h1>
+<h1>Softpanorama defensive error diagnostic framework</h1>
 
 <p>Many people independently came to the subset of ideas of <b><a href="../../SE/defensive_programming.shtml">Defensive programming</a></b> so it is impossible to attribute this concept to a single author. As an example of early attempt to formulate some principles of defensive programming style we can list&nbsp; Tom Christiansen recommendations 
 (Jan 1, 1998) for Perl language. Perl does not have strict typing of variables and, by default, does not&nbsp; require any declaration 
