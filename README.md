@@ -43,25 +43,24 @@ of variables, creating potential for misspelled variables slipping into producti
 <p>Defensive diagnostic framework module provides&nbsp; the following functionality:</p>
 <ol>
 
-   <li><b>All messages should be&nbsp; produced with the line in which they occurred. </b>
+<li><b>All messages should be&nbsp; produced with the line in which they occurred. </b>
 
-   <li><b>Messages are classified by severity with at least four levels distinguished:</b><ol type="a">
+<li><b>Messages are classified by severity with at least four levels distinguished:</b><ol type="a">
 
-      <li type="a"><tt>Warnings</tt>: informational messages that do not affect the validly of the program output or any results of 
+<li type="a"><tt>Warnings</tt>: informational messages that do not affect the validly of the program output or any results of 
       its execution. Still the situation that deserve some attention </li>
 
-      <li><tt>Errors</tt>: (<em>correctable errors</em>) Messages that something went wrong but the results execution of the program 
+<li><tt>Errors</tt>: (<em>correctable errors</em>) Messages that something went wrong but the results execution of the program 
       is still OK and/or output of the program 
       most probably is still valid</li>
 
-      <li><tt>Severe errors</tt> (<em>failures</em>). Program can continue but the results are most probably a garbage and should be 
+<li><tt>Severe errors</tt> (<em>failures</em>). Program can continue but the results are most probably a garbage and should be 
       discarded. Diagnostic messages provides after this point might still have a value. </li>
 
-      <li><tt>Terminal or internal errors</tt> (<em>abends</em>). Program can't continue at this point and need to exit. In case of 
+<li><tt>Terminal or internal errors</tt> (<em>abends</em>). Program can't continue at this point and need to exit. In case of 
       cron jobs, for such abnormal 
       situations you can even try to email the developer. </li>
-   </ol>
-
+</ol>
 
 <p>To achieve this one needs to write or borrow and adapt a special 
    messages generation subroutine for example<tt> logmes</tt>, modeled after one used in compilers. One of the parameters passes to 
