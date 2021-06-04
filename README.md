@@ -103,6 +103,6 @@ detected.&nbsp; For example</p>
    switch program to debugging mode in which it produced more output and/or particular actions are blocked or converted to printing 
    statement.&nbsp; Ut us should be aviable via options (for example via option -d)</li>
 
-<li>There should be a possibility to output of the summary of the message at the end of execution of programs</li>
+<li>There should be a possibility to output of the summary of the messages at the end of execution of programs</li>
 </ol>
 <p>For more current and more detailed ingomation see also <a href="http://softpanorama.org/Admin/Sp_admin_utils/defensive_error_diagnostic_framework.shtml">Defensive error diagnostic framework</a></p>
