@@ -6,7 +6,7 @@ less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
 
 <p>If messages 
    you get in case of errors or crashes are cryptic it typically takes a lot of efforts to relate the message to the root case. If you 
-   are the user of the program that you yourself have written that insult after injury :-) </p>
+   are the user of the program that you yourself have written that might be  viewed as a case of "insult after injury" :-) </p>
 
 <p>Here we strive to the 
    quality of diagnostics that is typically demonstrated by debugging complier. Defensive programming also presume presence of a sophisticated 
