@@ -43,9 +43,9 @@ of variables, creating potential for misspelled variables slipping into producti
 <p>Defensive diagnostic framework module provides&nbsp; the following functionality:</p>
 <ol>
 
-<li><b>All messages should be&nbsp; produced with the line in which they occurred. </b>
+<li><b>All messages are produced with the line in which they occurred.  </b>
 
-<li><b>Messages are classified by severity with at least four levels distinguished:</b><ol type="a">
+<li><b>Messages are printed with the error code, which signify the severity. Four levels are distinguished:</b><ol type="a">
 
 <li type="a"><tt>Warnings</tt>: informational messages that do not affect the validly of the program output or any results of 
       its execution. Still the situation that deserve some attention </li>
