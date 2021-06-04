@@ -89,7 +89,7 @@ detected.&nbsp; For example</p>
 
 <h3>Testing the Softpano.pm module</h3>
 
-<p>to test Softpano.pm module please use softpano_test.pl provided. This test re-implements basic functionality of cat command in Perl.  Invocation is:
+<p>To test Softpano.pm module please use softpano_test.pl provided. This test re-implements basic functionality of cat command in Perl. Invocation is: 
 
 <pre>perl softpano_test.pl softpano_test.pl</pre>
 
