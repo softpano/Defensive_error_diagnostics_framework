@@ -20,9 +20,9 @@ less (Xenix -- one of the early Unixes worked well on 2MB IBM PCs)</p>
 
 <li><b>All messages are produced with the line in which they occurred.  </b>
 
-<li><b>Messages are generated using subroutine</b> <tt>logme</tt> <b>which has two parameters (error code and the text of the 
-   message). They are printed with the error code, which signify the severity and the line number at which </b><tt>logme</tt><b> 
-   subroutine was involved. Four levels are distinguished:</b>
+<li><b>Messages are generated using subroutine</b> <tt>logme</tt> <b>which has two parameters (error code and the text of the message). 
+   They are printed with the error code, which signify the severity and the line number at which </b><tt>logme</tt><b> subroutine 
+was invoked. Four error levels levels are distinguished:</b>
 
 <ol type="a">
 
